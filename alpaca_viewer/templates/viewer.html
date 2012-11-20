@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alpaca</title>
+        <link href="/static/admin/css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="alpaca-image">
+            {% if alpaca %}
+            <a href="{% url viewer %}"><img src="{{ alpaca.url }}" {% if alpaca.alt %}alt="{{ alpaca.alt }}" {% endif %}/></a>
+            {% else %}
+            No alpaca :(
+            {% endif %}
+        </div>
+    </body>
+<html>

@@ -1,0 +1,11 @@
+body {
+    background: url(/static/admin/img/little_triangles.png) repeat;
+}
+div.alpaca-image {
+    margin: auto;
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    max-height: 95%;
+}
